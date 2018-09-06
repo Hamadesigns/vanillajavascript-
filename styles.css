@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+@import url('https://fonts.googleapis.com/css?family=Advent+Pro');
+@import url('https://fonts.googleapis.com/css?family=Nixie+One');
+html,
+body
+{
+    margin: 0%;
+    padding: 0%;
+}
+#main
+{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: url("blur.jpg");
+    height: 100vh;
+    padding-top: 50px;
+    margin: 0%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#calculatorBody
+{
+display: inline-block;
+position: relative;
+background: rgb(39, 39, 39);
+height: 550px;
+width: 350px;
+margin: auto;
+border-radius: 15px; 
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.932), 0 6px 20px 0 rgba(0, 0, 0, 0.925);
+overflow: hidden;
+}
+#output
+{
+    position: relative;
+    top: -104px;
+    display: inline-block;
+    overflow: hidden;
+    padding-left: 25px;
+    padding-right: 25px;  
+    width: 350px;
+    height: 100px;
+    color: orangered;
+    text-align: left;
+    margin: 0%;
+    font-family: 'Nixie One', cursive;
+    font-size: 40px;
+    
+    
+    
+}
+#blink
+{
+    z-index: 1;
+    position: relative;
+    top: 0px;
+    display: inline-block;
+    overflow: hidden;
+    padding-left: 25px;
+    padding-right: 25px;  
+    width: 350px;
+    height: 100px;
+    color: orangered;
+    text-align: left;
+    margin: 0%;
+  
+    font-family: 'Nixie One', cursive;
+    font-size: 40px;
+    
+
+}
+#keybadbody
+{
+    position: relative;
+    top: -60px;
+    height: 450px;
+    width: 350px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.932), 0 6px 20px 0 rgba(0, 0, 0, 0.925);
+    display: inline-block;
+    background-image: linear-gradient(-90deg, red, rgb(162, 0, 255));
+    transform: skewY(5deg);
+}
+#keysbox
+{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.932), 0 6px 20px 0 rgba(0, 0, 0, 0.925);  
+    display: inline-block;
+    position: relative;
+    top:-500px;
+    height: 400px;
+    width: 300px;
+    padding: 25px;
+    background-image: linear-gradient(rgb(97, 1, 97), rgb(255, 8, 0));
+    overflow: hidden;
+}
+#keysRow
+{
+position: relative;
+    display: inline-block;
+    width: 50%px;
+    height: 70px;
+    margin-bottom: 5px;
+    padding: 5px;
+   
+
+}
+.numkeys
+{
+    float: left;
+    font-family: 'Poiret One', cursive;
+    border: none;
+    margin-left: 5px; 
+    font-size: 48px;
+    Color: rgb(24, 24, 24);
+    background-color: rgba(255, 255, 255, 0.61);
+    height: 60px;
+    width: 40px;  
+}
+.opKeys
+{
+    float: left;
+    font-family: 'Poiret One', cursive;
+    border: none;
+    margin-left: 5px; 
+    font-size: 48px;
+    Color: rgb(24, 24, 24);
+    background-color: rgba(255, 255, 255, 0.61);
+    height: 60px;
+    width: 40px;  
+}
+.opKeys:hover
+{
+    
+box-shadow: 0 4px 8px 0 rgba(221, 12, 193, 0.747), 0 6px 20px 0 rgba(133, 133, 133, 0.925);
+font-size: 50px;
+
+}
+
+.numkeys:hover
+{
+
+box-shadow: 0 4px 8px 0 rgba(90, 90, 90, 0.747), 0 6px 20px 0 rgba(133, 133, 133, 0.925);
+font-size: 50px;
+}
+#AC
+{
+    width: 65px;
+    font-size: 22px;
+    color: rgb(201, 107, 0); 
+    font-weight: 700; 
+}
+#back
+{
+    width: 65px;
+    font-size: 22px;
+    color: rgb(201, 107, 0); 
+    font-weight: 700; 
+
+}
+#zero
+{
+    width: 63px;
+}
+#dot
+{
+    width: 63px;
+}
+#Enter
+{
+    font-size: 60px;
+    color: black;
+    width: 130px;
+    text-align: center; 
+}
+#Enter:hover
+{
+    box-shadow: 0 4px 8px 0 rgba(7, 211, 24, 0.747), 0 6px 20px 0 rgba(29, 204, 13, 0.925);
+
+}
+#plus,#minus,#multiply,#divide
+{
+    width: 63px;
+}
+#logo
+{
+ position: absolute;
+ top: 20px;
+ left: 20px;
+display: inline-block;
+
+}
+#logo:hover
+{
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
